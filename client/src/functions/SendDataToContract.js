@@ -20,7 +20,6 @@ export const sendDataToContract = async (data) => {
     contract.on("DataStored", (newData) => {
       console.log("DataStored event received: ", newData)
     })
-    console.log("Data sent to contract");
   } catch (error) {
     console.error("Error sending data to contract: ", error);
   }

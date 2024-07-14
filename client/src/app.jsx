@@ -54,7 +54,7 @@ export function App() {
 
   useEffect(() => {
     checkMetaMaskConnection();
-        // Subscribe to MetaMask's accountsChanged event
+    // Subscribe to MetaMask's accountsChanged event
     window.ethereum?.on("accountsChanged", handleAccountsChanged);
 
     return () => {
